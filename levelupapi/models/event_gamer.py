@@ -8,4 +8,4 @@ from levelupapi.models.event import Event
 class EventGamer(models.Model):
     
     gamer = models.ForeignKey(Gamer, on_delete=models.CASCADE)
-    EVENT = models.ForeignKey(Event, on_delete=models.CASCADE)
+    event = models.ForeignKey(Event, on_delete=models.CASCADE)
